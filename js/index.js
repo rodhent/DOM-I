@@ -79,8 +79,8 @@ const imgSrc = document.querySelector(".container img");
 imgSrc.src = "img/logo.png";
 
 //H1
-const heading = document.querySelector(".cta .cta-text h1");
-heading.textContent = "DOM Is Awesome";
+const h1Element = document.querySelector("h1");
+h1Element.innerHTML = "Dom<br>is<br>Awesome";
 
 //BUTTON
 const newButton = document.querySelector(".cta .cta-text button");
@@ -139,7 +139,7 @@ const contactSection = document.querySelector(".contact h4");
 contactSection.textContent = "Contact";
 
 const address = document.querySelector(".contact p");
-address.textContent = "123 Way 456 Street Somewhere, USA";
+address.innerHTML = "123 Way 456 Street<br> Somewhere, USA</br>";
 
 const phoneNumber = address.nextElementSibling;
 phoneNumber.textContent = "1 (888) 888-8888";
